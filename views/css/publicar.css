@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: carving;
+}
+
+@font-face {
+    font-family: carving;
+    src: url("../otf/MADECarvingSoftPERSONALUSE-Light.otf");
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100svw;
+    justify-content: space-evenly;
+    background-color: #FEF0C9;
+}
+
+.pesquisar > img {
+    border: 1px solid #d6d6e7;
+    background-color: #fff;
+    padding: 0 5px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.pesquisar, .perfil {
+    display: flex;
+}
+
+
+.pesquisar > input {
+
+    cursor: text;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 16px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #d6d6e7;
+    color: rgb(35, 38, 59);
+    :focus {
+        border-color: #3c4fe0;
+        box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+    }
+
+}
+
+.pesquisar > img {
+    border: 1px solid #d6d6e7;
+    background-color: #fff;
+    padding: 0 5px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.perfil {
+    align-items: center;
+    gap: 10px;
+}
+
+main {
+    text-align: center;
+}
+
+.container-publicar {
+
+    display: flex;
+    margin: 5% 0 0 0;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+#previow-imagem {
+    border-radius: 10px;
+    width: 400px;
+    height: 640px;
+    object-fit: fill;
+}
+
+.capa-livro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-livro-publicar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-livro-publicar > input {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 6px;
+    height: 5svh;
+    background-color: #fff;
+    border: 1px solid #d6d6e7;
+    color: black;
+    :focus {
+        border-color: #3c4fe0;
+        box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+    }
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 0px 6px;
+    background-color: #fff;
+    border: 1px solid #d6d6e7;
+    color: black;
+}
+
+
+.info-livro-publicar > input[type="submit"] {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+
+    header > img {
+        display: none;
+    }
+
+    header {
+        height: 50px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pesquisar {
+        display: none;
+    }
+
+    #previow-imagem {
+        width: 300px;
+    }
+
+    .perfil > img {
+        width: 40px;
+    }
+
+    .info-livro-publicar {
+        width: 70%;
+        align-items: center;
+    }
+
+    .info-livro-publicar > input, textarea {
+        width: 95%;
+    }
+
+
+}

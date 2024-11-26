@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: carving;
+}
+
+@font-face {
+    font-family: carving;
+    src: url("../otf/MADECarvingSoftPERSONALUSE-Light.otf");
+}
+
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: repeat;
+    background-position: 0%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    border: 2px solid rgb(218, 205, 205);
+    margin: 0 0 0 0;
+    align-items: center;
+    margin: auto;
+    margin: 10% 0 0 0;
+    background-color: #4B3A03;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-width: fit-content;
+    width: 50%;
+}
+
+.logo {
+    width: fit-content;
+    height: 400px;
+}
+
+.logo > img {
+    width: 400px;
+}
+
+.registrar, .sessao-registrar, .registrar-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.sessao-registrar {
+    gap: 10px;
+    height: 390px;
+    justify-content: space-evenly;
+    color: rgb(237, 237, 237);
+    width: 100%;
+}
+
+.registrar {
+    width: 100%;
+    align-items: center;
+    color: rgb(237, 237, 237);
+    gap: 10px;
+}
+
+.registrar > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    padding: 1%;
+    cursor: pointer;
+    text-decoration: none;
+    gap: 5px;
+    width: fit-content;
+    color: black;
+}
+
+.registrar-2 {
+    gap: 10px;
+    align-items: center;
+}
+
+.registrar-2 > input {
+    cursor: text;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 16px;
+    width: 65%;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #d6d6e7;
+    color: black;
+    :focus {
+        border-color: #3c4fe0;
+        box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+    }
+}
+
+.registrar-2 > input[type='button'] {
+    cursor: pointer;
+}
+
+a {
+    color: rgb(237, 237, 237);
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .container {
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column-reverse;
+        margin: 30% 0 0 0;
+        
+    }
+
+    .logo {
+        width: fit-content;
+        display: none;
+    }
+
+
+    .registrar, .sessao-registrar, .registrar-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .registrar, .registrar > div{
+        white-space: nowrap;
+    }
+
+    .registrar > div {
+        margin: 16% 0 0 0;
+    }
+
+
+    hr {
+        width: 90%;
+    }
+
+    .sessao-registrar {
+        width: 100%;
+        border:  2px solid black;
+        justify-content: center;
+        align-items: center;
+    }
+}

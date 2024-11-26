@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livraria Solar</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/registrar.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="logo">
+          <img src="../img/logo.jpeg" alt="" />
+        </div>
+        <div class="sessao-registrar">
+          <div class="registrar">
+            <h1>Registrar</h1>
+            <h5>Já tem conta? <a href="login.html">Entre aqui!</a></h5>
+            <div>
+              Entrar com o Google<img
+                src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                width="35px"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <h5>OU</h5>
+          <hr />
+
+          <form
+            action="/livraria/createUser"
+            class="registrar-2"
+            method="post"
+            id="pub"
+          >
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="insira seu nome"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="insira seu email"
+            />
+            <input
+              type="password"
+              placeholder="Senha"
+              id="senha"
+              name="senha"
+            />
+            <input
+              type="text"
+              name="descrição"
+              id="descricao"
+              placeholder="insira uma breve descrição (opicional)"
+            />
+            <input
+              type="text"
+              name="livro_favorito"
+              id="livrof"
+              placeholder="qual o seu livro favorito?"
+            />
+            <input type="file" name="file" id="file" />
+            <input type="submit" value="Registrar" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="/gabrielJobs/Implementando/views/js/createUser.js"></script>
+  </body>
+</html>

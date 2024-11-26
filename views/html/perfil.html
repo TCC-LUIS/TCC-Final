@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/perfil.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo.jpeg" alt="" width="100px" id="img-conta"/>
+      <div class="pesquisar">
+        <input type="text" placeholder="Pesquisar Livros" />
+        <img src="../img/lupa.svg" alt="" width="25px"/>
+      </div>
+    </header>
+    <main>
+      <div class="container-conta">
+        <div class="container-info-conta-1">
+          <div class="img-conta">
+            <img id="fotoPerfil" alt="Foto do perfil" width="230px"/>
+          </div>
+          <div class="info-conta" id="userConainer">
+            <h3 id="nomeUser"></h3>
+            <h3 id="emailUser"></h3>
+            <h3 id="sumaryUser"></h3>
+            <h3 id="userFavBook"></h3>
+          </div>
+        </div>
+        <div class="container-info-conta-2">
+          <div class="info-bloco">
+            <button class="button-perfil">Livros Escritos</button>
+            <button class="button-perfil">Avaliaçõe</button>
+            <button class="button-perfil" id="publicar">Publicar Livro</button>
+            <button class="button-perfil" id="carrinho">Carrinho</button>
+            <button class="button-perfil" id="sair">Sair da Conta</button>
+          </div>
+          <div class="info-bloco-display">
+            <div id="livrosContainer"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+    <script src="/gabrielJobs/Implementando/views/js/perfil.js"></script>
+    <script src="/gabrielJobs/Implementando/views/js/viewUser.js"></script>
+  </body>
+</html>

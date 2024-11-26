@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publicar</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/publicar.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo.jpeg" alt="" width="100px" id="img-conta"/>
+      <div class="pesquisar">
+        <input type="text" placeholder="Pesquisar Livros" />
+        <img src="../img/lupa.svg" alt="" width="25px" />
+      </div>
+      <div class="perfil">
+        <h3 id="user">Nome do Usuário</h3>
+      </div>
+    </header>
+
+    <main>
+      <form
+        class="container-publicar"
+        action="/livraria/send"
+        method="post"
+        id="pub"
+      >
+        <div class="capa-livro">
+          <input
+            type="file"
+            onchange="previewFile()"
+            name="capa"
+            id="capa"
+            accept="image *"
+          />
+          <img
+            src="https://placehold.co/400x640"
+            alt="Image preview..."
+            id="previow-imagem"
+          />
+        </div>
+        <div class="info-livro-publicar">
+          <input
+            type="text"
+            placeholder="Nome do Livro"
+            id="titulo"
+            name="titulo"
+          />
+          <input
+            type="text"
+            placeholder="Editora"
+            id="editora"
+            name="editora"
+          />
+          <input type="text" placeholder="Genero" id="genero" name="genero" />
+          <input
+            type="number"
+            placeholder="Classificação Indicativa"
+            id="classificacaoIndicativa"
+            name="classificacaoIndicativa"
+          />
+          <input type="text" placeholder="Idioma" id="idioma" name="idioma" />
+          <input
+            type="number"
+            placeholder="Número de Páginas"
+            id="numeroPaginas"
+            name="numeroPaginas"
+          />
+          <textarea
+            placeholder="Sinopse"
+            cols="30"
+            rows="10"
+            id="sinopse"
+            name="sinopse"
+          ></textarea>
+          <input
+            type="number"
+            min="1"
+            step="any"
+            placeholder="Preço"
+            id="preco"
+            name="preco"
+          />
+          <input type="submit" value="Publicar" />
+        </div>
+      </form>
+    </main>
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+    <script src="/gabrielJobs/Implementando/views/js/perfil.js"></script>
+    <script src="/gabrielJobs/Implementando/views/js/publicar.js"></script>
+    <script src="/gabrielJobs/Implementando/views/js/send.js"></script>
+    
+  </body>
+</html>

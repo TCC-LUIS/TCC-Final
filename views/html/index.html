@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livraria Solar</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body id="body">
+    <header>
+      <img src="../img/logo.jpeg" alt="" width="100px" />
+      <div class="pesquisar">
+        <input type="text" placeholder="Pesquisar Livros" />
+        <img src="../img/lupa.svg" alt="" width="25px" />
+      </div>
+      <div class="perfil">
+        <img id="fotoPerfil" alt="Foto do perfil" width="70px" />
+        <h3 id="nomeUsuario"></h3>
+      </div>
+    </header>
+
+    <div class="popup-livro">
+      <img src="../img/livro.jpg" alt="" width="250px" id="capa1" />
+      <div class="fechar-popup">X</div>
+      <div class="desc-livro">
+        <div>
+          <h3>Nome: Resident Evil: The Umbrella Conspiracy</h3>
+          <h3>Edição: Inglês</h3>
+          <h3>Autor: Alguem</h3>
+          <h3>Distribuidora: LTDA</h3>
+          <h4>Avaliação: 4.5/5</h4>
+          <h4>
+            Sinopse: HLorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Fugit hic dolores ex quasi possimus tempora itaque facere atque
+            voluptate iste quis minus vel impedit autem, nobis omnis sunt
+            blanditiis. Recusandae.
+          </h4>
+        </div>
+        <div>
+          <button class="button">Adicionar ao Carrinho</button>
+          <button class="button">Mais informações</button>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <div>
+        <h1>Principais Livros</h1>
+      </div>
+
+      <div id="livrosContainer" class="livros-famosos">
+        <!-- Os pubs serão exibidos aqui -->
+      </div>
+
+      <div class="main-2">
+        <div class="sessao-categorias">
+          <h2>CATEGORIAS</h2>
+          <div class="categorias">
+            <div id="Romance"><h2>Romance </h2></div>
+            <div id="Financas"><h2>financas</h2></div>
+            <div id="história"><h2>história</h2></div>
+          </div>
+        </div>
+
+        <div class="sessao-comuns">
+          <h2>LIVROS GERAIS</h2>
+          <div class="comuns">
+            <div class="comuns" id="livros-comuns">
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/desc-livros.js"></script>
+    <script src="/gabrielJobs/Implementando/views/js/carrgar.js"></script>
+  </body>
+</html>
